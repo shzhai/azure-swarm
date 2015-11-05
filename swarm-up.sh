@@ -14,7 +14,7 @@
 # with great success.
 
 # randomly generated string used as a prefix for all Azure resource names
-NAME_SUFFIX=`node -e 'console.log(require("crypto").randomBytes(4).toString("hex"))'`
+NAME_SUFFIX=`nodejs -e 'console.log(require("crypto").randomBytes(4).toString("hex"))'`
 
 # include options.sh for all the variables
 source ./options.sh
