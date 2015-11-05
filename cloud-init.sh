@@ -3,7 +3,7 @@
 export DOCKER_HOST="0.0.0.0:2375"
 
 # install docker
-curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+curl -sSL https://get.docker.com/ | sudo sh
 
 # reconfigure docker upstart service to listen on tcp
 sudo sh -c "echo DOCKER_OPTS=\\\"-H=$DOCKER_HOST\\\" >> /etc/default/docker"
